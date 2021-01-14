@@ -1,0 +1,102 @@
+h4 {
+    padding-top: 5px;
+
+  }
+  span {
+    margin-right: 10px;
+
+  }
+  
+  input {
+    margin-right: 100px;
+  }
+
+  .gradient {
+
+    background-image: linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%)
+  }
+
+  .movies {
+
+  }
+
+  .bgani {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.newhead {
+  margin-top: -70px !important;
+
+
+}
+
+
+
+
+
+
+
+.newsearch {
+  position: absolute;
+  z-index : 9999;
+  margin-top: -50px !important;
+
+
+  background-color: #ffffff;
+  border-radius: 30px;
+
+  padding: 3px;
+  width: 500px;
+}
+
+.newstyle {
+
+  font-size: 15px;
+}
+
+.nomoviesbox{
+
+padding-left:20px;
+
+  background-color: #ffffff;
+  border-radius: 30px;
+
+
+
+
+}
+
+
+
+.moviereviewbox{
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 30px;
+
+}
+
+.movelogo{
+
+  
+}
