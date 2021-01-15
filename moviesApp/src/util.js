@@ -7,3 +7,5 @@ export function excerpt(string) {
     separator: /,?\.* +/ // separate by spaces, including preceding commas and periods
   });
 }
+
+//Test git - had an issue so this is just to test the commit and push
