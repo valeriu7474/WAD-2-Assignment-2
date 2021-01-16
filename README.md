@@ -3,6 +3,13 @@
 Name: Valeriu Blascu
 
 ## Overview
+ + Pages - Web site app is protected against users who are not signed in.
+ + Sign Up - Users can create an account.
+ + Login - Signed in users can access routes.
+ + Favourites - Users can add movies to their favourites.
+ + Upcoming -  Users can see displayed upcoming movies.
+ + Now Playing Users can see displayed now playing movies.
+ + Top Rated - Users can see displayed top rated movies.
 
 ## Features
  
@@ -24,15 +31,19 @@ Name: Valeriu Blascu
 
 ## API Data Model
 
-+ https://api.themoviedb.org/3/movie/${id} - get detailed information on a specific movie. 
-+ https://api.themoviedb.org/3/genre/movie/list - get a list of movie genres
-+ https://api.themoviedb.org/3/movie/${id}/reviews - get movie reviews
-+ https://api.themoviedb.org/3/movie/upcoming - get upcoming movies
-+ https://api.themoviedb.org/3/movie/now_playing - get now playing movies
-+ https://api.themoviedb.org/3/movie/popular - get popular movies
-+ https://api.themoviedb.org/3/movie/top_rated - get top rated movies
++ http://localhost:3000/movies - GET list of movies
++ http://localhost:3000/movies/${id} - GET detailed information on a specific movie. 
++ http://localhost:3000/movies/${id}/reviews - GET movie reviews
++ http://localhost:3000/movies/upcoming - GET upcoming movies
++ http://localhost:3000/movies/nowplaying - GET now playing movies
++ http://localhost:3000/movies/popular - GET popular movies
++ http://localhost:3000/movies/toprated - GET top rated movies
++ http://localhost:3000/login - GET login page
++ http://localhost:3000/signup - GET sign up page
++ http://localhost:3000/movies/favorites - GET favourite movie page (PUSH)
 
 ## App Design
+/movies/:id/reviews
 
 ### Component catalogue (If required)
 
