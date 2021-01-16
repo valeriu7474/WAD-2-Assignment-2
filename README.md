@@ -103,7 +103,7 @@ Name: Valeriu Blascu
 ---------------------------------
 
 [model]: ./data.jpg
-[movieDetail]: ./moviesApp/public/movieDetail.png
+[movieDetail]: ./moviesApp/public/moviedetail.png
 [review]: ./moviesApp/public/review.png
 [reviewlink]: ./moviesApp/public/reviewlink.png
 [cardlink]: ./moviesApp/public/cardlink.png
