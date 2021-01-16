@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import MovieListPageTemplate from "../components/templateMovieListPage";
 import {MoviesContext} from '../contexts/moviesContext'
-import AddToFavoritesButton from '../components/buttons/addToFavorites'
+
 
 const TopRatedMoviesPage = () => {
   const context = useContext(MoviesContext);
