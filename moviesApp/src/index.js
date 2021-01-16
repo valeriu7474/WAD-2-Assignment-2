@@ -38,10 +38,8 @@ const App = () => {
           <PrivateRoute exact path="/movies/popular" component={PopularMoviesPage} />
           <PrivateRoute exact path="/movies/toprated" component={TopRatedMoviesPage} />
           <PrivateRoute path="/movies/:id" component={MoviePage} />
-
-                <Route exact path="/login" component={LoginPage} />
-                <Route path="/signup" component={SignUpPage} />
-
+            <Route exact path="/login" component={LoginPage} />
+            <Route path="/signup" component={SignUpPage} />
           <PrivateRoute path="/" component={HomePage} />
           <Redirect from="*" to="/" />
           </Switch>
