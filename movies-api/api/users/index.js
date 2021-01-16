@@ -10,8 +10,7 @@ router.get('/', (req, res) => {
     User.find().then(users =>  res.status(200).json(users));
 });
 
-// register
-// Register OR authenticate a user
+
 router.post('/', async (req, res, next) => {
   if (!req.body.username || !req.body.password) {
     res.status(401).json({
@@ -30,7 +29,7 @@ router.post('/', async (req, res, next) => {
       if (!user) return res.status(401).json({ code: 401, msg: 'Authentication failed. User not found.' });
       user.comparePassword(req.body.password, (err, isMatch) => {
         if (isMatch && !err) {
-          // if user is found and password is right create a token
+          // if user is found and password is right create token
           const token = jwt.sign(user.username, process.env.SECRET);
           // return the information including token as JSON
           res.status(200).json({

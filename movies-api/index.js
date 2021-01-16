@@ -43,7 +43,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(passport.initialize());
 app.use('/api/movies', moviesRouter);
-// app.use('/api/movies', authenticate, moviesRouter);
 app.use('/api/upcomingMovies', passport.authenticate('jwt', {session: false}), upcomingMoviesRouter);
 app.use('/api/nowPlayingMovies', passport.authenticate('jwt', {session: false}), nowPlayingMoviesRouter);
 app.use('/api/popularMovies', passport.authenticate('jwt', {session: false}), popularMoviesRouter);

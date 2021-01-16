@@ -1,13 +1,7 @@
-
-
 import LoginPage from "./pages/loginPage";
 import SignUpPage from "./pages/signUpPage";
 import PrivateRoute from "./routes/privateRoute"
 import AuthProvider from "./contexts/authContext";
-
-
-
-
 
 import MovieReviewPage from "./pages/movieReviewPage";
 import MoviesContextProvider from "./contexts/moviesContext";
@@ -25,11 +19,6 @@ import FavoriteMoviesPage from './pages/favoritesMoviesPage'       // NEW
 import SiteHeader from './components/siteHeader'
 import PopularMoviesPage from "./pages/popularMoviesPage";
 import TopRatedMoviesPage from "./pages/topRatedMovies";
-
-
-
-
-
 
 const App = () => {
   return (
@@ -52,8 +41,6 @@ const App = () => {
 
                 <Route exact path="/login" component={LoginPage} />
                 <Route path="/signup" component={SignUpPage} />
-
-
 
           <PrivateRoute path="/" component={HomePage} />
           <Redirect from="*" to="/" />
