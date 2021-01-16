@@ -1,6 +1,5 @@
 import React, { useEffect, createContext, useReducer } from "react";
-// import { getMovies, getUpcomingMovies, getNowPlaying, getPopularMovies, getTopRatedMovies} from "../api/tmdb-api";
-import { getMovies, getMovieDetails } from "../api/movie-api";
+import { getMovies, getUpcomingMovies, getNowPlayingMovies, getPopularMovies, getTopRatedMovies } from "../api/movie-api";
 
 
 export const MoviesContext = createContext(null);
@@ -59,33 +58,33 @@ const MoviesContextProvider = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // useEffect(() => {
-  //   getUpcomingMovies().then((movies) => {
-  //     dispatch({ type: "load-upcoming", payload: { movies } });
-  //   });
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
+  useEffect(() => {
+    getUpcomingMovies().then((movies) => {
+      dispatch({ type: "load-upcoming", payload: { movies } });
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  // useEffect(() => {
-  //   getNowPlaying().then((movies) => {
-  //     dispatch({ type: "load-nowplaying", payload: { movies } });
-  //   });
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
+  useEffect(() => {
+    getNowPlayingMovies().then((movies) => {
+      dispatch({ type: "load-nowplaying", payload: { movies } });
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  // useEffect(() => {
-  //   getPopularMovies().then((movies) => {
-  //     dispatch({ type: "load-popular", payload: { movies } });
-  //   });
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
+  useEffect(() => {
+    getPopularMovies().then((movies) => {
+      dispatch({ type: "load-popular", payload: { movies } });
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  // useEffect(() => {
-  //   getTopRatedMovies().then((movies) => {
-  //     dispatch({ type: "load-toprated", payload: { movies } });
-  //   });
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
+  useEffect(() => {
+    getTopRatedMovies().then((movies) => {
+      dispatch({ type: "load-toprated", payload: { movies } });
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <MoviesContext.Provider

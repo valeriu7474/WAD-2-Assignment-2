@@ -5,9 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./siteHeader.css";
 
 
-
-
-
 const SiteHeader = () => {
   return (
     
@@ -51,6 +48,16 @@ const SiteHeader = () => {
           <li className="nav-item">
             <Link className="nav-link text-white" to="/movies/toprated">
               Top Rated
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link text-white" to="/login">
+              Login
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link text-white" to="/signup">
+              Sign Up
             </Link>
           </li>
         </ul>
