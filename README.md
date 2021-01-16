@@ -100,21 +100,16 @@ Name: Valeriu Blascu
 ![][addfavorite]
 >Clicking the 'Add to favorite' button will add that movie to the favorite page view.
 
-## Independent learning (If relevant)
-
-Improved my card flip design using "transform-style" from this link.
-https://www.w3schools.com/howto/howto_css_flip_card.asp
-
 ---------------------------------
 
 [model]: ./data.jpg
-[movieDetail]: ./public/movieDetail.png
-[review]: ./public/review.png
-[reviewlink]: ./public/reviewlink.png
-[cardlink]: ./public/cardlink.png
-[stories]: ./public/storybook.png
-[toprated]: ./public/toprated.png
-[upcoming]: ./public/upcoming.png
-[popular]: ./public/popular.png
-[nowplaying]: ./public/nowplaying.png
-[addfavorite]: ./public/addfavorite.png
+[movieDetail]: ./moviesApp/public/movieDetail.png
+[review]: ./moviesApp/public/review.png
+[reviewlink]: ./moviesApp/public/reviewlink.png
+[cardlink]: ./moviesApp/public/cardlink.png
+[stories]: ./moviesApp/public/storybook.png
+[toprated]: ./moviesApp/public/toprated.png
+[upcoming]: ./moviesApp/public/upcoming.png
+[popular]: ./moviesApp/public/popular.png
+[nowplaying]: ./moviesApp/public/nowplaying.png
+[addfavorite]: ./moviesApp/public/addfavorite.png
