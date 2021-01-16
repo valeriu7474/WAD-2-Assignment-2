@@ -112,4 +112,4 @@ Name: Valeriu Blascu
 [upcoming]: ./moviesApp/public/upcoming.png
 [popular]: ./moviesApp/public/popular.png
 [nowplaying]: ./moviesApp/public/nowplaying.png
-[addfavorite]: ./moviesApp/public/addfavorite.png
+[addfavorite]: ./moviesApp/public/addfavourite.png
