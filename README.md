@@ -119,3 +119,7 @@ Name: Valeriu Blascu
 [addfavorite]: ./moviesApp/public/addfavourite.png
 [clicklogin]: ./moviesApp/public/clicklogin.png
 [clicksignup]: ./moviesApp/public/clicksignup.png
+
+### References
+
+ + Login and SignUp design inspired by  - https://codepen.io/colorlib/pen/rxddKy
