@@ -47,9 +47,6 @@ Name: Valeriu Blascu
 ## App Design
 /movies/:id/reviews
 
-### Component catalogue (If required)
-
-![][stories]
 
 ### UI Design
 
