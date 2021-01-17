@@ -3,6 +3,7 @@
 Name: Valeriu Blascu
 
 ## Overview
+ + Movie API - Web App now only utilizes my movie API.
  + Pages - Web site app is protected against users who are not signed in.
  + Sign Up - Users can create an account.
  + Login - Signed in users can access routes.
@@ -31,16 +32,17 @@ Name: Valeriu Blascu
 
 ## API Data Model
 
-+ http://localhost:3000/movies - GET list of movies
-+ http://localhost:3000/movies/${id} - GET detailed information on a specific movie. 
-+ http://localhost:3000/movies/${id}/reviews - GET movie reviews
-+ http://localhost:3000/movies/upcoming - GET upcoming movies
-+ http://localhost:3000/movies/nowplaying - GET now playing movies
-+ http://localhost:3000/movies/popular - GET popular movies
-+ http://localhost:3000/movies/toprated - GET top rated movies
-+ http://localhost:3000/login - GET login page
-+ http://localhost:3000/signup - GET sign up page
-+ http://localhost:3000/movies/favorites - GET favourite movie page (PUSH)
++ http://localhost:8080/api/movies - (GET) list of movies
++ http://localhost:8080/api/movies/${id} - (GET) detailed information on a specific movie. 
++ http://localhost:8080/api/movies/${id}/reviews - (GET) movie reviews
++ http://localhost:8080/api/upcoming - (GET) upcoming movies
++ http://localhost:8080/api/nowplaying - (GET) now playing movies
++ http://localhost:8080/api/popular - (GET) popular movies
++ http://localhost:8080/api/toprated - (GET) top rated movies
++ http://localhost:8080/api/users - (GET) all users
+
++ http://localhost:8080/api/users - (POST) add user
+
 
 ## App Design
 /movies/:id/reviews
@@ -95,11 +97,16 @@ Name: Valeriu Blascu
 > Clicking a card causes the display of that movie's details.
 
 ![][reviewLink]
->Clicking the 'Full Review' for a review extract will display the full text of the review
+>Clicking the 'Full Review' for a review extract will display the full text of the review.
 
 ![][addfavorite]
 >Clicking the 'Add to favorite' button will add that movie to the favorite page view.
 
+![][clicklogin]
+>Clicking the 'Login' button will authenticate the user and start session.
+
+![][clicksignup]
+>Clicking the 'Sign Up' button will add the user data to the database.
 ---------------------------------
 
 [model]: ./data.jpg
@@ -113,3 +120,5 @@ Name: Valeriu Blascu
 [popular]: ./moviesApp/public/popular.png
 [nowplaying]: ./moviesApp/public/nowplaying.png
 [addfavorite]: ./moviesApp/public/addfavourite.png
+[clicklogin]: ./moviesApp/public/clicklogin.png
+[clicksignup]: ./moviesApp/public/clicksignup.png
